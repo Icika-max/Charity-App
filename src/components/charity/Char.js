@@ -27,7 +27,6 @@ function Char() {
       .catch((err) => console.error(err.message));
   }, []);
 
-
   useEffect(() => {
     if (search !== "") {
       let filteredData = data.filter((item) => {
@@ -44,7 +43,7 @@ function Char() {
   }, [search]);
   return (
     <div>
-      <Search setSearch={setSearch} search={search} />
+      <Search setSearch={setSearch} search={search} data={data} />
       <div className="listSection">
         {newData &&
           newData.map((item, index) => {
@@ -52,7 +51,7 @@ function Char() {
               <List
                 list={item}
                 key={index}
-                selectOrg={() =>console.log(item)}
+                selectOrg={() => console.log(item)}
               />
             );
           })}
