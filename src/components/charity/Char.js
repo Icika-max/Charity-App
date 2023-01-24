@@ -43,17 +43,16 @@ function Char() {
   }, [search]);
   return (
     <div>
-      <Search setSearch={setSearch} search={search} data={data} />
+      <Search
+        setSearch={setSearch}
+        search={search}
+        setNewData={setNewData}
+        data={data}
+      />
       <div className="listSection">
         {newData &&
           newData.map((item, index) => {
-            return (
-              <List
-                list={item}
-                key={index}
-                selectOrg={() => console.log(item)}
-              />
-            );
+            return <List list={item} key={index} selectOrg={() => item} />;
           })}
       </div>
     </div>

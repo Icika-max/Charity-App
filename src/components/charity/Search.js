@@ -1,12 +1,25 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
-function Search({ setSearch, search, data }) {
+function Search({ setSearch, search, data, setNewData }) {
+  const [selectedCategory, setSelectedCategory] = useState('')
+
+
+  useEffect(() => {
+    if(selectedCategory === null || selectedCategory === ''){
+      setNewData(data)
+      return
+    }
+    const filteredCategory = data.filter(category => category.category === selectedCategory)
+    setNewData(filteredCategory);
+  }, [selectedCategory]);
+
   return (
     <>
-      <select>
+      <select onChange={(event) => setSelectedCategory(event.target.value)}>
+        <option value={''}>All Categories</option>
         {data &&
           data.map((item, index) => {
-            return <option key={index}>{item.themes.theme.name}</option>;
+            return <option key={index} value={item.category}>{item.category}</option>;
           })}
       </select>
       <div className="searchSection">
