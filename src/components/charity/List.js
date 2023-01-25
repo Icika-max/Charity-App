@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import DisplaySelected from "./DisplaySelected";
 
-function List({ list, selectOrg }) {
+function List({ list }) {
+  const [visibleDetails, setVisibleDetails] = useState(false);
+  function handleClick(){
+    setVisibleDetails(!visibleDetails)
+  }
   return (
-    <div className="card" onClick={selectOrg}>
+    <div className="card" onClick={handleClick}>
       <img src={list.logoUrl} />
       <h3>{list.name}</h3>
+      { visibleDetails ? <DisplaySelected data={list}/> : ""}
     </div>
   );
 }

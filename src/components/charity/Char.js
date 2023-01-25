@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Search from "./Search";
 import List from "./List";
-import DisplaySelected from "./DisplaySelected";
 
 function Char() {
   const [data, setData] = useState([]);
@@ -30,10 +29,12 @@ function Char() {
   useEffect(() => {
     if (search !== "") {
       let filteredData = data.filter((item) => {
+        // const otherCountry = item.countries.country.name;
         return (
           item.country.toLowerCase().includes(search) ||
           item.state.toLowerCase().includes(search) ||
           item.city.toLowerCase().includes(search)
+          // otherCountry.toLowerCase().includes(search)
         );
       });
       setNewData(filteredData);
@@ -53,7 +54,7 @@ function Char() {
       <div className="listSection">
         {newData &&
           newData.map((item, index) => {
-            return <List list={item} key={index} selectOrg={() => item} />;
+            return <List list={item} key={index} />;
           })}
       </div>
     </div>
