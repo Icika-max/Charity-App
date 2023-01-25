@@ -3,7 +3,9 @@ import React,{useState,useEffect} from "react";
 function Search({ setSearch, search, data, setNewData }) {
   const [selectedCategory, setSelectedCategory] = useState('')
 
-
+  const categoryList = data.map(category => category.category)
+  const newCategory = new Set(categoryList)
+  const newSetCategory = [...newCategory]
   useEffect(() => {
     if(selectedCategory === null || selectedCategory === ''){
       setNewData(data)
@@ -16,10 +18,14 @@ function Search({ setSearch, search, data, setNewData }) {
   return (
     <>
       <select onChange={(event) => setSelectedCategory(event.target.value)}>
-        <option value={''}>All Categories</option>
-        {data &&
-          data.map((item, index) => {
-            return <option key={index} value={item.category}>{item.category}</option>;
+        <option value={""}>All Categories</option>
+        {newSetCategory &&
+          newSetCategory.map((item, index) => {
+            return (
+              <option key={index} value={item}>
+                {item}
+              </option>
+            );
           })}
       </select>
       <div className="searchSection">
