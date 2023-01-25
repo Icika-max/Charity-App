@@ -42,7 +42,8 @@ function Char() {
     }
   }, [search]);
   return (
-    <div>
+    <div className="charSection">
+      <h1>PARTNERSHIP</h1>
       <Search
         setSearch={setSearch}
         search={search}

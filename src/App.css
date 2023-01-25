@@ -1,4 +1,17 @@
+/* Char Section */
+
+.charSection h1{
+  text-align: center;
+}
+
 /* Search Section */
+.searchFilterSection{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: right;
+  margin-right: 3rem;
+}
 .searchSection {
   float: right;
   margin: 5px 10px;

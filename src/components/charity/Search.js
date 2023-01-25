@@ -16,7 +16,7 @@ function Search({ setSearch, search, data, setNewData }) {
   }, [selectedCategory]);
 
   return (
-    <>
+    <div className="searchFilterSection">
       <select onChange={(event) => setSelectedCategory(event.target.value)}>
         <option value={""}>All Categories</option>
         {newSetCategory &&
@@ -39,7 +39,7 @@ function Search({ setSearch, search, data, setNewData }) {
         />
         <button>Search</button>
       </div>
-    </>
+    </div>
   );
 }
 
