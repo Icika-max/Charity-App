@@ -9,14 +9,14 @@ function App() {
     <div className="App">
       <NavBar>
         <Switch>
-          <Route path='/'>
-            <Home />
-          </Route>
           <Route path='/charity'>
             <Charity />
           </Route>
           <Route path='list'>
             <List />
+          </Route>
+          <Route exact path='/'>
+            <Home />
           </Route>
         </Switch>
       </NavBar>
