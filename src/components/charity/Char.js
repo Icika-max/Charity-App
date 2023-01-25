@@ -10,12 +10,12 @@ function Char() {
 
   //  Organization => https://api.globalgiving.org/api/public/orgservice/all/organizations?api_key=3be0e996-0c2d-4b38-8441-ab85ccc4895d
 
-  const CHARITY_API = "http://localhost:8001/organizations";
+  const CHARITY_API = "https://charity-app-server.vercel.app/organizations";
   useEffect(() => {
     fetch(CHARITY_API)
       .then((res) => {
         if (!res.ok) {
-          throw new Error(console.log(res.status));
+          throw new Error(console.log("Network Error"));
         }
         return res.json();
       })

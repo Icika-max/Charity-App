@@ -17,12 +17,11 @@
   margin: 5px 10px;
 }
 
-.searchSection button,
 .searchSection input {
   outline: none;
   border-radius: 5px;
 }
-.searchSection input {
+.donateBtn , .searchSection input {
   padding: 5px 2px;
   color: black;
   text-align: center;
@@ -31,7 +30,7 @@
 .searchSection input::placeholder {
   color: #aca6a6;
 }
-.searchSection button {
+.donateBtn {
   cursor: pointer;
   border: 1px solid black;
   background: transparent;
@@ -46,7 +45,7 @@
   background-position: right bottom;
   transition: all 0.5s ease-out;
 }
-.searchSection button:hover {
+.donateBtn:hover {
   background-position: left bottom;
   color: #fff;
 }
