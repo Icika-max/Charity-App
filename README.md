@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+## To view this project in a browser visit the following URL:
+charity-app-seven.vercel.app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
