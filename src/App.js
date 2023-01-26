@@ -5,6 +5,7 @@ import Char from "./components/charity/Char";
 import Home from "./components/LandingPage/Home";
 import Nav from "./components/Nav";
 import List from "./components/charity/List";
+import Contribute from "./components/Contribute";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/charity" element={<Char />} />
-          <Route path="list" element={<List />} />
+          <Route path="contribute" element={<Contribute />} />
           <Route exact path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>

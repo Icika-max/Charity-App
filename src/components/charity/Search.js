@@ -37,7 +37,6 @@ function Search({ setSearch, search, data, setNewData }) {
           }}
           placeholder="Search here..."
         />
-        <button>Search</button>
       </div>
     </div>
   );
