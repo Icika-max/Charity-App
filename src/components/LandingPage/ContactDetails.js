@@ -13,7 +13,7 @@ function Contacts(){
                                 <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                     <div className="row pt-3">
                                         <div className="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
-                                            <span className="image-logos"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                            <span className="image-logos"><i className="fa fa-map-marker" aria-hidden="true"></i></span>
                                         </div>
                                         <div className="col-lg-10 col-md-9 col-sm-9 col-9">
                                             <h3 className="font-weight-light">FIND US AT THE OFFICE</h3>
@@ -22,7 +22,7 @@ function Contacts(){
                                     </div>
                                     <div className="row pt-3">
                                         <div className="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
-                                            <span className="image-logos"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+                                            <span className="image-logos"><i className="fa fa-address-book" aria-hidden="true"></i></span>
                                         </div>
                                         <div className="col-lg-10 col-md-9 col-sm-9 col-9">
                                             <h3 className="font-weight-light">CALL US THROUGH</h3>
