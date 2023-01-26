@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.top_overlay {
+    background-image: url('./images/waterfall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.top_overlay {
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+}
+.top_overlay #content {
+    text-align: center;
+    margin-top: 45%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.top_overlay h1 {
+    font-weight: 700;
+    font-size: 7rem;
+}
+.top_overlay hr{
+    width: 400px;
+    border-top: 3px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-right: auto;
+    margin-left: auto;
+}
