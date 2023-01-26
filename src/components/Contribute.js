@@ -19,10 +19,10 @@ function Contribute({submit}){
                     <label for = "paymentOptions" className="form-label"></label>
                     <div id="paymentOptions">
                         <div className="btn-group">
-                            <a href="" className="btn btn-warning active" data-bs-toggle="button" aria-pressed="false" role="button">Card Payment</a> 
+                            <a href="#" className="btn btn-warning active" data-bs-toggle="button" aria-pressed="false" role="button">Card Payment</a> 
                             <br/> 
                             <br/>
-                            <a href="" className="btn btn-warning disabled" data-bs-toggle="button" aria-pressed="true" role="button" aria-disabled="true">Pay by mpesa</a>                            
+                            <a href="#" className="btn btn-warning disabled" data-bs-toggle="button" aria-pressed="true" role="button" aria-disabled="true">Pay by mpesa</a>                            
                         </div>
                     </div>            
                 </div>

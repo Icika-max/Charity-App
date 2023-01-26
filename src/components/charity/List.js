@@ -8,8 +8,8 @@ function List({ list }) {
   }
   return (
     <div className="card" onClick={handleClick}>
-      <img src={list.logoUrl} alt='random'/>
-      <h3>{list.name}</h3>
+      <img src={list?.logoUrl} alt='random'/>
+      <h3>{list?.name}</h3>
       { visibleDetails ? <DisplaySelected data={list}/> : ""}
     </div>
   );

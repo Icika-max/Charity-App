@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 function DisplaySelected(props) {
   const { data } = props;
+  let navigate = useNavigate();
   return (
     <>
       <h3>{data.country || data.state || data.city}</h3>
@@ -8,7 +10,14 @@ function DisplaySelected(props) {
         <h4>Present in : {data.countries.country.name}</h4>
       ) : null}
       <p>Mission : {data.mission}</p>
-      <button className="donateBtn" onClick={() => console.log(data.id)}>Donate</button>
+      <button
+        className="donateBtn"
+        onClick={() => {
+          navigate("/contribute");
+        }}
+      >
+        Donate
+      </button>
     </>
   );
 }
