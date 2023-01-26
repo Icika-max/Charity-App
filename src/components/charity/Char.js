@@ -6,4 +6,4 @@ function Char(){
     )
 }
 
-export default Char
+export default Char;
