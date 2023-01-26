@@ -1,0 +1,11 @@
+
+.contact-info .head{
+    background: url(./images/flamingos.jpg);
+    background-size: 70% ;
+}
+.contact-info .image-logos{
+    font-size: 40px;
+}
+.contact-info .head{
+    background-color: rgba(0,0,0,0.3);
+}
