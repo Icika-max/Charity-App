@@ -6,7 +6,7 @@ function Nav(){
         <nav>
           <NavLink exact to='/'> Home</NavLink> 
           <NavLink to='/charity'>Charity</NavLink>
-          <NavLink to='/list'></NavLink>
+          <NavLink to='/list'>List</NavLink>
           </nav>
         
     )
