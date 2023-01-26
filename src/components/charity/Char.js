@@ -29,12 +29,10 @@ function Char() {
   useEffect(() => {
     if (search !== "") {
       let filteredData = data.filter((item) => {
-        // const otherCountry = item.countries.country.name;
         return (
           item.country.toLowerCase().includes(search) ||
           item.state.toLowerCase().includes(search) ||
           item.city.toLowerCase().includes(search)
-          // otherCountry.toLowerCase().includes(search)
         );
       });
       setNewData(filteredData);
